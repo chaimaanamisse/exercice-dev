@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ecb8b74a3a.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="container ctn-table">
+            <table id="table"> 
+                <thead></thead> 
+                <tr>
+                    <th>iD</th>
+                    <th>date de création</th>
+                    <th>état</th>
+                    <th>nom</th>
+                    <th>prénom</th>
+                    <th>nom d'utulisateur</th>
+                    <th>matricule</th>
+                    <th>action</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+                
+            </tbody>
+                
+            </table>
+        </div>
+        <div class="container ctn-button">
+            <button id="myBtn">Ajouter un utilisateur</button>
+            <!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="container modal-container">
+        <h1>Ajout d'utilisateurs </h1>
+        
+        <div class="flex-container">
+        <div>
+
+            <label for="nom">Nom</label>
+            <input type="text" id="nom">
+            <label for="username">Nom d'utilisateur</label>
+            <input type="text" id="username">
+            <label for="matricule">Matricule</label>
+            <input type="matricule" id="matricule">
+        </div>
+        <div>
+            <label for="firstName">Prénom</label>
+            <input type="text" id="firstName">
+            <label for="date">Date de création</label>
+            <input type="date" id="date">
+        </div>
+        <div>
+            <label for="etat">Etat</label>
+            <select  id="etat">
+                <option value="" disabled> </option>
+                <option value="Validé"> Validé</option>
+                <option value="Rejeté">Rejeté</option>
+                <option value="En validation">En validation</option>
+            </select>
+        </div>
+    </div>
+    <div class="ctn-button">
+        <button  onclick="addUserInfo()" >Enregistrer</button>
+    </div>
+
+        
+    </div>
+    </div>
+  
+  </div>
+        </div>
+    </div>
+
+  
+    <script src="index.js"></script>
+    <script src="modal.js"></script>
+</body>
+</html>
